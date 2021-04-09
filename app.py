@@ -32,6 +32,7 @@ fig.add_trace(go.Scatter(
     fill='toself',
     fillcolor='red',
     opacity=.5,
+    name='Losses',
     showlegend=False
 ))
 
@@ -44,6 +45,7 @@ fig.add_trace(go.Scatter(
     fill='toself',
     fillcolor='green',
     opacity=.5,
+    name='Earnings',
     showlegend=False
 ))
 
@@ -52,6 +54,7 @@ fig.add_trace(go.Scatter(
     y=[monthly_cost / 2],
     mode='text',
     text=f'{needed_funding:.2f} EUR',
+    name='Necessary Funding',
     showlegend=False
 ))
 
