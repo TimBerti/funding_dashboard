@@ -54,7 +54,7 @@ fig.add_trace(go.Scatter(
     y=[monthly_cost / 2],
     mode='text',
     text=f'{needed_funding:.2f} EUR',
-    name='Necessary Funding',
+    # name='Necessary Funding',
     showlegend=False
 ))
 
