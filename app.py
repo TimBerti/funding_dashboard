@@ -96,8 +96,6 @@ month = np.arange(0, time_frame1 + time_frame2 + time_frame3)
 
 df = pd.DataFrame({'Revenue': revenues, 'Expenses': costs, 'Month': month})
 
-print(df)
-
 break_even = 1000000
 
 for index, (revenue, cost) in enumerate(zip(revenues, costs)):
