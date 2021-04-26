@@ -64,17 +64,17 @@ total_time_frame = 0
 st.title('Phase 1')
 
 user_count1 = int(st.text_input('1. Final user count:', value=0))
-time_frame1 = int(st.text_input('1. Duration (in months):', value=6))
+time_frame1 = int(st.text_input('1. Duration (in months):', value=8))
 revenue_per_user1 = float(st.text_input('1. Revenue per user (in EUR):', value=10))
-monthly_cost1 = int(st.text_input('1. Monthly expenses (in EUR):', value=4000))
+monthly_cost1 = int(st.text_input('1. Monthly expenses (in EUR):', value=7000))
 
 
 st.title('Phase 2')
 
-user_count2 = int(st.text_input('2. Final user count:', value=500))
-time_frame2 = int(st.text_input('2. Duration (in months):', value=12))
+user_count2 = int(st.text_input('2. Final user count:', value=100))
+time_frame2 = int(st.text_input('2. Duration (in months):', value=6))
 revenue_per_user2 = float(st.text_input('2. Revenue per user (in EUR):', value=10))
-monthly_cost2 = int(st.text_input('2. Monthly expenses (in EUR):', value=8000))
+monthly_cost2 = int(st.text_input('2. Monthly expenses (in EUR):', value=10000))
 
 
 st.title('Phase 3')
@@ -82,7 +82,7 @@ st.title('Phase 3')
 user_count3 = int(st.text_input('3. Final user count:', value=2000))
 time_frame3 = int(st.text_input('3. Duration (in months):', value=12))
 revenue_per_user3 = float(st.text_input('3. Revenue per user (in EUR):', value=10))
-monthly_cost3 = int(st.text_input('3. Monthly expenses (in EUR):', value=15000))
+monthly_cost3 = int(st.text_input('3. Monthly expenses (in EUR):', value=16000))
 
 costs = np.concatenate([np.ones(time_frame1) * monthly_cost1,
                 np.ones(time_frame2) * monthly_cost2,
